@@ -1,0 +1,514 @@
+﻿{
+  "quiz": [
+    {
+      "category": "Alimentation",
+      "questions": [
+        {
+          "question": "Quel est le nom de votre entreprise ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre secteur d'activité ?",
+          "type": "text",
+          "name": "secteur"
+        },
+        {
+          "question": "Quel est votre chiffre d'affaire ?",
+          "type": "text",
+          "name": "chiffre"
+        },
+        {
+          "question": "Quel est votre effectif ?",
+          "type": "text",
+          "name": "effectif"
+        },
+        {
+          "question": "Quel est votre code postal ?",
+          "type": "text",
+          "name": "code"
+        },
+        {
+          "question": "Quel est votre ville ?",
+          "type": "text",
+          "name": "ville"
+        },
+        {
+          "question": "Quel est votre adresse ?",
+          "type": "text",
+          "name": "adresse"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre site internet ?",
+          "type": "text",
+          "name": "site"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre prénom ?",
+          "type": "text",
+          "name": "prenom"
+        },
+        {
+          "question": "Quel est votre fonction ?",
+          "type": "text",
+          "name": "fonction"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        }
+      ]
+    },
+    {
+      "category": "ActiviteSportive",
+      "questions": [
+        {
+          "question": "Quel est le nom de votre entreprise ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre secteur d'activité ?",
+          "type": "text",
+          "name": "secteur"
+        },
+        {
+          "question": "Quel est votre chiffre d'affaire ?",
+          "type": "text",
+          "name": "chiffre"
+        },
+        {
+          "question": "Quel est votre effectif ?",
+          "type": "text",
+          "name": "effectif"
+        },
+        {
+          "question": "Quel est votre code postal ?",
+          "type": "text",
+          "name": "code"
+        },
+        {
+          "question": "Quel est votre ville ?",
+          "type": "text",
+          "name": "ville"
+        },
+        {
+          "question": "Quel est votre adresse ?",
+          "type": "text",
+          "name": "adresse"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre site internet ?",
+          "type": "text",
+          "name": "site"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre prénom ?",
+          "type": "text",
+          "name": "prenom"
+        },
+        {
+          "question": "Quel est votre fonction ?",
+          "type": "text",
+          "name": "fonction"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        }
+      ]
+    },
+    {
+      "category": "Sommeil",
+      "questions": [
+        {
+          "question": "Quel est le nom de votre entreprise ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre secteur d'activité ?",
+          "type": "text",
+          "name": "secteur"
+        },
+        {
+          "question": "Quel est votre chiffre d'affaire ?",
+          "type": "text",
+          "name": "chiffre"
+        },
+        {
+          "question": "Quel est votre effectif ?",
+          "type": "text",
+          "name": "effectif"
+        },
+        {
+          "question": "Quel est votre code postal ?",
+          "type": "text",
+          "name": "code"
+        },
+        {
+          "question": "Quel est votre ville ?",
+          "type": "text",
+          "name": "ville"
+        },
+        {
+          "question": "Quel est votre adresse ?",
+          "type": "text",
+          "name": "adresse"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre site internet ?",
+          "type": "text",
+          "name": "site"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre prénom ?",
+          "type": "text",
+          "name": "prenom"
+        },
+        {
+          "question": "Quel est votre fonction ?",
+          "type": "text",
+          "name": "fonction"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        }
+      ]
+    },
+    {
+      "category": "ConsommationAddiction",
+      "questions": [
+        {
+          "question": "Quel est le nom de votre entreprise ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre secteur d'activité ?",
+          "type": "text",
+          "name": "secteur"
+        },
+        {
+          "question": "Quel est votre chiffre d'affaire ?",
+          "type": "text",
+          "name": "chiffre"
+        },
+        {
+          "question": "Quel est votre effectif ?",
+          "type": "text",
+          "name": "effectif"
+        },
+        {
+          "question": "Quel est votre code postal ?",
+          "type": "text",
+          "name": "code"
+        },
+        {
+          "question": "Quel est votre ville ?",
+          "type": "text",
+          "name": "ville"
+        },
+        {
+          "question": "Quel est votre adresse ?",
+          "type": "text",
+          "name": "adresse"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre site internet ?",
+          "type": "text",
+          "name": "site"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre prénom ?",
+          "type": "text",
+          "name": "prenom"
+        },
+        {
+          "question": "Quel est votre fonction ?",
+          "type": "text",
+          "name": "fonction"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        }
+      ]
+    },
+    {
+      "category": "SanteMentale",
+      "questions": [
+        {
+          "question": "Quel est le nom de votre entreprise ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre secteur d'activité ?",
+          "type": "text",
+          "name": "secteur"
+        },
+        {
+          "question": "Quel est votre chiffre d'affaire ?",
+          "type": "text",
+          "name": "chiffre"
+        },
+        {
+          "question": "Quel est votre effectif ?",
+          "type": "text",
+          "name": "effectif"
+        },
+        {
+          "question": "Quel est votre code postal ?",
+          "type": "text",
+          "name": "code"
+        },
+        {
+          "question": "Quel est votre ville ?",
+          "type": "text",
+          "name": "ville"
+        },
+        {
+          "question": "Quel est votre adresse ?",
+          "type": "text",
+          "name": "adresse"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre site internet ?",
+          "type": "text",
+          "name": "site"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre prénom ?",
+          "type": "text",
+          "name": "prenom"
+        },
+        {
+          "question": "Quel est votre fonction ?",
+          "type": "text",
+          "name": "fonction"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        }
+      ]
+    },
+    {
+      "category": "Global",
+      "questions": [
+        {
+          "question": "Quel est le nom de votre entreprise ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre secteur d'activité ?",
+          "type": "text",
+          "name": "secteur"
+        },
+        {
+          "question": "Quel est votre chiffre d'affaire ?",
+          "type": "text",
+          "name": "chiffre"
+        },
+        {
+          "question": "Quel est votre effectif ?",
+          "type": "text",
+          "name": "effectif"
+        },
+        {
+          "question": "Quel est votre code postal ?",
+          "type": "text",
+          "name": "code"
+        },
+        {
+          "question": "Quel est votre ville ?",
+          "type": "text",
+          "name": "ville"
+        },
+        {
+          "question": "Quel est votre adresse ?",
+          "type": "text",
+          "name": "adresse"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre site internet ?",
+          "type": "text",
+          "name": "site"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        },
+        {
+          "question": "Quel est votre prénom ?",
+          "type": "text",
+          "name": "prenom"
+        },
+        {
+          "question": "Quel est votre fonction ?",
+          "type": "text",
+          "name": "fonction"
+        },
+        {
+          "question": "Quel est votre numéro de téléphone ?",
+          "type": "text",
+          "name": "telephone"
+        },
+        {
+          "question": "Quel est votre adresse mail ?",
+          "type": "text",
+          "name": "mail"
+        },
+        {
+          "question": "Quel est votre nom ?",
+          "type": "text",
+          "name": "nom"
+        }
+      ]
+    }
+  ]
+}

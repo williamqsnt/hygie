@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "À propos de Hygie";
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/site.css"> <!-- Lien vers votre fichier CSS -->
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+        <p>Bienvenue sur la page "À propos" de Hygie, une application dédiée à la sensibilisation sur les habitudes de vie à travers des quiz sur des thèmes tels que l'alimentation et le sommeil.</p>
+
+        <br />
+        <h5>Rôles de l'application Hygie</h5>
+        <p>Hygie a plusieurs rôles clés qui visent à améliorer la santé et le bien-être des utilisateurs :</p>
+        <ul>
+            <li><strong>Sensibilisation :</strong> Hygie permet aux utilisateurs de mieux comprendre leurs habitudes de vie en leur proposant des quiz sur des sujets essentiels comme l'alimentation et le sommeil.</li>
+            <li><strong>Analyse :</strong> L'application analyse les réponses des utilisateurs et leur fournit des recommandations personnalisées basées sur les résultats.</li>
+            <li><strong>Éducation :</strong> Hygie offre des informations et des conseils pratiques en se basant sur des recommandations d'organismes reconnus, tels que l'OMS et l'Agence de santé française.</li>
+            <li><strong>Prévention :</strong> En encourageant des habitudes de vie saines, Hygie vise à promouvoir la prévention des problèmes de santé liés à l'alimentation et au sommeil.</li>
+        </ul>
+
+        <br />
+        <h5>Sources utilisées dans l'application</h5>
+        <p>Dans l'application Hygie, nous nous basons sur des sources fiables et reconnues pour garantir la qualité et la pertinence des informations fournies :</p>
+        <div class="source-container">
+            <div class="source-info">
+                <h6>Organisation Mondiale de la Santé (OMS)</h6>
+                <p>Fournit des recommandations de santé publique et des guides sur des pratiques de vie saines.</p>
+            </div>
+            <img src="~/img/OMS.png" alt="Logo OMS" class="source-logo" />
+        </div>
+
+        <div class="source-container">
+            <div class="source-info">
+                <h6>Agence nationale de santé publique (Santé publique France)</h6>
+                <p>Offre des données et des conseils pour améliorer la santé de la population.</p>
+            </div>
+            <img src="~/img/SPF.jpg" alt="Logo SPF" class="source-logo" />
+        </div>
+
+    </div>
+</body>
+</html>

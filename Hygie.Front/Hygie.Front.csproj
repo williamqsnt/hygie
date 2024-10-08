@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Views\Quiz\" />
+    <None Remove="Views\Apropos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Quiz\" />
+    <Folder Include="Views\Apropos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hygie.Back\Hygie.Back.csproj" />
+    <ProjectReference Include="..\Hygie.Model\Hygie.Model.csproj" />
+  </ItemGroup>
+</Project>
