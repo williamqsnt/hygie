@@ -13,16 +13,62 @@
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 
     <div class="contentQuiz">
-        <div class="question">
-            <h2>@Model.Questions[i].Intitule</h2>
-            <div class="reponses">
-                @foreach (var reponse in Model.Questions[i].Reponses)
-                {
-                    <div class="reponse">
-                        <p>@reponse.Contenu</p>
-                    </div>
-                }
+        @foreach(var question in Model.Questions)
+        {
+            <div class="question">
+                <h2>@question.Intitule</h2>
+                <div class="reponses">
+                    @foreach (var reponse in question.Reponses)
+                    {
+                        <div class="reponse" onclick="addResponse(@reponse.Score, @question.Id)">
+                            <p>@reponse.Contenu</p>
+                        </div>
+                    }
+                </div>
             </div>
-        </div>
+        }
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script>
+    // Variable JS initialisée avec la valeur de i côté C#
+    var i = 0;
+    var tab = [];
+
+    var questions = $(".question");
+    for (var j = 0; j < questions.length; j++) {
+        if (i != j) {
+            questions[j].classList.add("hidden");
+        }
+    }
+
+    function addResponse(score, idQuestion) {
+        if (i < questions.length - 1) {
+            tab.push([i, score]);
+            questions[i].classList.add("hidden");
+
+            // Incrémenter i en JS
+            i++;
+            questions[i].classList.remove("hidden");
+
+            console.log(tab);
+        } else {
+            tab.push([i, score]);
+
+            let tabString = encodeURIComponent(JSON.stringify(tab)).toString();
+            console.log(tabString);
+            var url = '@Url.Action("GetResultQuiz", "Quiz", new { ValuesAnswers = "0", QuizCat = Model.Category })';
+            url = url.replace("0", tabString);
+            console.log(url);
+
+            window.location.href = url;
+        }
+        // Logique supplémentaire que tu veux réaliser avec la variable i
+    }
+</script>
+
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
