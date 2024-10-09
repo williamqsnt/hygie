@@ -391,7 +391,7 @@
       ]
     },
     {
-      "category": "ActiviteSportive",
+      "category": "Activite Sportive",
       "questions": [
         {
           "question": "Quel est ce quiz ?",
@@ -411,7 +411,7 @@
       ]
     },
     {
-      "category": "ConsommationAddiction",
+      "category": "Consommation et Addiction",
       "questions": [
         {
           "question": "Quel est ce quiz ?",
@@ -421,7 +421,7 @@
       ]
     },
     {
-      "category": "SanteMentale",
+      "category": "Santé Mentale",
       "questions": [
         {
           "question": "Quel est ce quiz ?",

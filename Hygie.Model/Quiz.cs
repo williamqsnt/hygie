@@ -17,15 +17,15 @@ namespace Hygie.Model
                     {
                         case "Alimentation":
                             return QuizCat.Alimentation;
-                        case "ActivitePhysique":
+                        case "Activite Sportive":
                             return QuizCat.ActivitePhysique;
                         case "Sommeil":
                             return QuizCat.Sommeil;
-                        case "ConsommationSubstances":
+                        case "Consommation et Addiction":
                             return QuizCat.Consommation;
-                        case "Total":
+                        case "Global":
                             return QuizCat.Total;
-                        case "SanteMentale":
+                        case "Santé Mentale":
                             return QuizCat.SanteMentale;
                         default:
                             return QuizCat.Total;
@@ -48,7 +48,7 @@ namespace Hygie.Model
     {
         [Description("Alimentation")]
         Alimentation,
-        [Description("Activite Physique")]
+        [Description("Activite Sportive")]
         ActivitePhysique,
         [Description("Sommeil et Temps d'écran")]
         Sommeil,
