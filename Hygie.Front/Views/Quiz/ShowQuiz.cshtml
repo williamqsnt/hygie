@@ -1,24 +1,21 @@
-﻿@using Hygie.Model;
-
-@model Quiz;
-
-@{
-    ViewData["Title"] = "Home Page";
-    int i = 0;
-    List<int> reponses = new List<int>();
-}
-
-<div class="text-center">
+﻿<div class="text-center">
+    <!-- Barre de progression et indicateur -->
+    <div class="progress-container">
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div id="progress-indicator" class="progress-indicator">1/@Model.Questions.Count</div>
+    </div>
 
     <div class="contentQuiz">
-        @foreach(var question in Model.Questions)
+        @foreach (var question in Model.Questions)
         {
             <div class="question">
                 <h2>@question.Intitule</h2>
                 <div class="reponses">
                     @foreach (var reponse in question.Reponses)
                     {
-                        <div class="reponse" onclick="addResponse(@reponse.Score, @question.Id)">
+                        <div class="reponse" data-question-id="@question.Id" data-score="@reponse.Score" onclick="addResponse(@reponse.Score, @question.Id, this)">
                             <p>@reponse.Contenu</p>
                         </div>
                     }
@@ -26,47 +23,216 @@
             </div>
         }
     </div>
+
+    <!-- Boutons de navigation -->
+    <div class="navigation-buttons">
+        <button id="prev-btn" onclick="prevQuestion()" disabled>Précédent</button>
+        <button id="next-btn" onclick="nextQuestion()">Suivant</button>
+    </div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 <script>
-    // Variable JS initialisée avec la valeur de i côté C#
-    var i = 0;
-    var tab = [];
-
+    var i = 0; // Index de la question actuelle
+    var tab = []; // Tableau pour stocker les réponses
     var questions = $(".question");
+    var totalQuestions = questions.length;
+
     for (var j = 0; j < questions.length; j++) {
-        if (i != j) {
+        if (i !== j) {
             questions[j].classList.add("hidden");
         }
     }
 
-    function addResponse(score, idQuestion) {
-        if (i < questions.length - 1) {
-            tab.push([i, score]);
-            questions[i].classList.add("hidden");
+    function updateProgressBar() {
+        var progress = ((i + 1) / totalQuestions) * 100;
+        $('#progress-bar').css('width', progress + '%');
+        $('#progress-indicator').text((i + 1) + '/' + totalQuestions);
+        // Activer ou désactiver les boutons selon la question actuelle
+        $('#prev-btn').prop('disabled', i === 0);
+        $('#next-btn').text(i === totalQuestions - 1 ? 'Terminer' : 'Suivant');
 
-            // Incrémenter i en JS
+        // Mettre en surbrillance la réponse sélectionnée si disponible
+        highlightSelectedResponse();
+    }
+
+    function addResponse(score, idQuestion, element) {
+        // Sauvegarde de la réponse actuelle dans le tableau
+        tab[i] = { index: i, score: score, questionId: idQuestion };
+
+        // Marquer la réponse sélectionnée
+        $('.reponse').removeClass('selected'); // Supprimer la classe sélectionnée de toutes les réponses
+        $(element).addClass('selected'); // Ajouter la classe sélectionnée à la réponse cliquée
+
+        if (i < totalQuestions - 1) {
+            questions[i].classList.add("hidden");
             i++;
             questions[i].classList.remove("hidden");
-
-            console.log(tab);
+            updateProgressBar();
         } else {
-            tab.push([i, score]);
-
+            // Terminer le quiz
             let tabString = encodeURIComponent(JSON.stringify(tab)).toString();
-            console.log(tabString);
             var url = '@Url.Action("GetResultQuiz", "Quiz", new { ValuesAnswers = "0", QuizCat = Model.Category })';
             url = url.replace("0", tabString);
-            console.log(url);
-
             window.location.href = url;
         }
-        // Logique supplémentaire que tu veux réaliser avec la variable i
     }
+
+    function prevQuestion() {
+        if (i > 0) {
+            // Sauvegarder la réponse actuelle avant de passer à la question précédente
+            questions[i].classList.add("hidden");
+            i--;
+            questions[i].classList.remove("hidden");
+            updateProgressBar();
+        }
+    }
+
+    function nextQuestion() {
+        if (i < totalQuestions - 1) {
+            // Si on est sur une question intermédiaire
+            questions[i].classList.add("hidden");
+            i++;
+            questions[i].classList.remove("hidden");
+            updateProgressBar();
+        } else {
+            // Si on est à la dernière question, on termine le quiz
+            let tabString = encodeURIComponent(JSON.stringify(tab)).toString();
+            var url = '@Url.Action("GetResultQuiz", "Quiz", new { ValuesAnswers = "0", QuizCat = Model.Category })';
+            url = url.replace("0", tabString);
+            window.location.href = url;
+        }
+    }
+
+    function highlightSelectedResponse() {
+        // Retirer la surbrillance de toutes les réponses
+        $('.reponse').removeClass('selected');
+
+        // Si une réponse a été donnée, mettre en surbrillance
+        if (tab[i]) {
+            const selectedResponse = tab[i];
+            // Utiliser l'id de la question et le score pour sélectionner la réponse
+            $('.reponse[data-question-id="' + selectedResponse.questionId + '"][data-score="' + selectedResponse.score + '"]').addClass('selected');
+        }
+    }
+
+    // Initialisation de la barre de progression au chargement
+    updateProgressBar();
 </script>
 
 <style>
+    .text-center {
+        text-align: center;
+        padding: 2rem;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .progress-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .progress-bar-container {
+        width: 100%;
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        height: 20px;
+        max-width: 600px;
+        position: relative;
+        flex-grow: 1;
+    }
+
+    .progress-bar {
+        width: 0;
+        height: 100%;
+        background-color: #4caf50;
+        border-radius: 10px;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .progress-indicator {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .contentQuiz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .question {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+        .question:hover {
+            transform: scale(1.02);
+        }
+
+    .question-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        color: #333;
+    }
+
+    .reponses {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .reponse {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .reponse:hover {
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .reponse.selected {
+            background-color: #d1e7dd; /* Couleur de surlignage pour la réponse sélectionnée */
+            border-color: #0f5132; /* Couleur de bordure pour la réponse sélectionnée */
+        }
+
+        .reponse p {
+            margin: 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
     .hidden {
         display: none;
     }
-</style>
+
+    .navigation-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        back
