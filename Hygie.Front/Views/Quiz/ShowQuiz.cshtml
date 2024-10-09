@@ -1,0 +1,27 @@
+﻿@using Hygie.Model;
+
+@model Quiz;
+
+@{
+    ViewData["Title"] = "Home Page";
+    int i = 0;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <div class="contentQuiz">
+        <div class="question">
+            <h2>@Model.Questions[i].Intitule</h2>
+            <div class="reponses">
+                @foreach (var reponse in Model.Questions[i].Reponses)
+                {
+                    <div class="reponse">
+                        <p>@reponse.Contenu</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

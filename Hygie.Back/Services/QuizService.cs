@@ -30,5 +30,14 @@ namespace Hygie.Back.Services
 
             return contenu;
         }
+
+        public Quiz GetQuiz(QuizCat quizCat)
+        {
+            Contenu contenu = GetContenu();
+
+            Quiz quiz = contenu.Quizzes.Find(q => q.Category == quizCat);
+
+            return quiz;
+        }
     }
 }

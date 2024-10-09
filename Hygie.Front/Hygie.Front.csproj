@@ -13,7 +13,6 @@
     <None Remove="Views\Apropos\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Quiz\" />
     <Folder Include="Views\Apropos\" />
   </ItemGroup>
   <ItemGroup>

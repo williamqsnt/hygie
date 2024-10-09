@@ -35,7 +35,7 @@
                             <div class="card-body">
                                 <h5>@quiz.Category</h5>
                                 <p>Testez vos connaissances et obtenez des conseils sur votre @quiz.Category.</p>
-                                <a href="" class="btn btn-outline-primary">Faire le quiz</a>
+                                <a href="@Url.Action("ShowQuiz", "Quiz", new { quizCat = quiz.Category})" href="" class="btn btn-outline-primary">Faire le quiz</a>
                             </div>
                         </div>
                     </div>
