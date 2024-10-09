@@ -30,8 +30,8 @@
                     <div class="col-md-4 mb-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <h5>@quiz.Category</h5>
-                                <p>Testez vos connaissances et obtenez des conseils sur votre @quiz.Category.</p>
+                                <h5>@quiz.GetCategoryDescription()</h5>
+                                <p>Testez vos connaissances et obtenez des conseils sur votre @quiz.GetCategoryDescription()</p>
                                 <a href="@Url.Action("ShowQuiz", "Quiz", new { quizCat = quiz.Category})" href="" class="btn btn-outline-primary">Faire le quiz</a>
                             </div>
                         </div>

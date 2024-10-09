@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Reflection;
 using System.Text.Json.Serialization;
 
 namespace Hygie.Model
@@ -7,11 +8,12 @@ namespace Hygie.Model
     {
         [JsonPropertyName("category")]
         public string TextCategory { get; set; }
+
         public QuizCat Category
         {
             get
             {
-                if(TextCategory != null)
+                if (TextCategory != null)
                 {
                     switch (TextCategory)
                     {
@@ -36,12 +38,25 @@ namespace Hygie.Model
             }
             set
             {
-
+                // Optionnel : Ajoutez une logique ici si nécessaire
             }
+        }
+
+        public string GetCategoryDescription()
+        {
+            return GetEnumDescription(Category);
         }
 
         [JsonPropertyName("questions")]
         public List<Question> Questions { get; set; } = new List<Question>();
+
+        private string GetEnumDescription(QuizCat category)
+        {
+            FieldInfo field = category.GetType().GetField(category.ToString());
+            DescriptionAttribute attribute = field.GetCustomAttribute<DescriptionAttribute>();
+
+            return attribute != null ? attribute.Description : category.ToString();
+        }
     }
 
     public enum QuizCat
