@@ -2,75 +2,60 @@
 
 @{
     ViewData["Title"] = "Vos résultats";
+    int nbRecommandationsImportantes = Model.Item1.Count;
+    int nbRecommandationsImportantesMoyennes = Model.Item2.Count;
+    int nbRecommandationsMoyennes = Model.Item3.Count;
+    int nbRecommandationsPresque = Model.Item4.Count;
+    int nbRecommandationsFelicitations = Model.Item5.Count;
 }
 
 <h1>@ViewData["Title"]</h1>
 
 <div class="result">
 
-    <h2>Recommandations Importantes</h2>
-    @if (Model.Item1.Any())
+    @if (nbRecommandationsImportantes > 0)
     {
+        <h2>Attention : tu as @nbRecommandationsImportantes points que tu ne respectes pas du tout !</h2>
         foreach (var item in Model.Item1)
         {
             <p>@item</p>
         }
     }
-    else
-    {
-        <p>Aucune recommandation importante.</p>
-    }
 
-    <h2>Recommandations Importantes Moyennes</h2>
-    @if (Model.Item2.Any())
+    @if (nbRecommandationsImportantesMoyennes > 0)
     {
+        <h2>Attention : tu as @nbRecommandationsImportantesMoyennes points que tu ne respectes presque pas !</h2>
         foreach (var item in Model.Item2)
         {
             <p>@item</p>
         }
     }
-    else
-    {
-        <p>Aucune recommandation importante moyenne.</p>
-    }
 
-    <h2>Recommandations Moyennes</h2>
-    @if (Model.Item3.Any())
+    @if (nbRecommandationsMoyennes > 0)
     {
+        <h2>Pas mal, tu as @nbRecommandationsMoyennes points à moitié respectés !</h2>
         foreach (var item in Model.Item3)
         {
             <p>@item</p>
         }
     }
-    else
-    {
-        <p>Aucune recommandation moyenne.</p>
-    }
 
-    <h2>Recommandations Presque</h2>
-    @if (Model.Item4.Any())
+    @if (nbRecommandationsPresque > 0)
     {
+        <h2>Presque, tu as @nbRecommandationsPresque que tu remplis quasiment comme il faut !</h2>
         foreach (var item in Model.Item4)
         {
             <p>@item</p>
         }
     }
-    else
-    {
-        <p>Aucune recommandation presque.</p>
-    }
 
-    <h2>Recommandations Félicitations</h2>
-    @if (Model.Item5.Any())
+    @if (nbRecommandationsFelicitations > 0)
     {
+        <h2>Parfait, tu as @nbRecommandationsFelicitations que tu remplis parfaitement !</h2>
         foreach (var item in Model.Item5)
         {
             <p>@item</p>
         }
-    }
-    else
-    {
-        <p>Aucune recommandation de félicitations.</p>
     }
 
 </div>

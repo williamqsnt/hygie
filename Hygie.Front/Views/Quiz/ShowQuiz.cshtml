@@ -226,4 +226,17 @@
         cursor: pointer;
         border: none;
         border-radius: 5px;
-        back
+        background-color: #4caf50;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        button:hover:not(:disabled) {
+            background-color: #45a049;
+        }
+</style>
