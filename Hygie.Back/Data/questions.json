@@ -269,6 +269,11 @@
               "recommandation": "Nul, il est important de faire attention ! La consommation excessive de charcuterie est associée à des risques pour la santé. Il est recommandé de ne pas dépasser 150 g par semaine. Réduire ta consommation serait un excellent pas pour mieux protéger ta santé."
             },
             {
+              "contenu": "Moins de 100g.",
+              "Score": 3,
+              "recommandation": "Bravo pour ton choix ! Consommer peu de charcuterie est une excellente décision pour ta santé, car cela réduit les risques liés aux produits transformés."
+            },
+            {
               "contenu": "Je ne mange jamais de charcuterie.",
               "Score": 4,
               "recommandation": "Bravo pour ton choix ! Ne pas consommer de charcuterie est une excellente décision pour ta santé, car cela réduit les risques liés aux produits transformés."
@@ -291,18 +296,13 @@
               "recommandation": "Nul, il serait bon de revoir ta consommation ! Pour limiter les risques pour la santé et protéger l'environnement, il est recommandé de ne pas dépasser 500 g de viande rouge par semaine. Réduire ta consommation peut faire une différence."
             },
             {
-              "contenu": "Entre 300 g et 500 g.",
-              "Score": 2,
-              "recommandation": "C'est un bon début ! Tu es dans la limite supérieure des recommandations. Essaie de viser vers le bas de cette fourchette pour encore plus de bénéfices pour ta santé et l'environnement."
-            },
-            {
               "contenu": "Moins de 500 g.",
               "Score": 4,
               "recommandation": "Bravo ! Ta consommation de viande est bien en dessous de la limite recommandée. Continue sur cette voie pour prendre soin de ta santé et de la planète."
             },
             {
               "contenu": "Je ne consomme pas de viande.",
-              "Score": 3,
+              "Score": 2,
               "recommandation": "Très bon choix ! Ne pas consommer de viande est bénéfique pour ta santé et l'environnement. Bravo pour cette décision !"
             }
           ]
