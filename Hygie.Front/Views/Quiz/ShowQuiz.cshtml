@@ -7,18 +7,23 @@
     int i = 0;
 }
 
-<div class="text-center">
-
-    <div class="contentQuiz">
-        <div class="question">
-            <h2>@Model.Questions[i].Intitule</h2>
-            <div class="reponses">
-                @foreach (var reponse in Model.Questions[i].Reponses)
-                {
-                    <div class="reponse">
-                        <p>@reponse.Contenu</p>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <div class="question">
+                        <h2 class="text-center font-weight-bold">@Model.Questions[i].Intitule</h2>
+                        <div class="reponses mt-4">
+                            @foreach (var reponse in Model.Questions[i].Reponses)
+                            {
+                                <div class="reponse my-2 p-3 border rounded-lg bg-light">
+                                    <p class="mb-0">@reponse.Contenu</p>
+                                </div>
+                            }
+                        </div>
                     </div>
-                }
+                </div>
             </div>
         </div>
     </div>
