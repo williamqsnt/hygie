@@ -1,13 +1,76 @@
-﻿@model List<string>;
+﻿@model Tuple<List<string>, List<string>, List<string>, List<string>, List<string>>; // On utilise un Tuple pour passer plusieurs listes
 
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Vos résultats";
 }
+
 <h1>@ViewData["Title"]</h1>
 
 <div class="result">
-    @foreach (var item in Model)
+
+    <h2>Recommandations Importantes</h2>
+    @if (Model.Item1.Any())
     {
-        <h2>@item</h2>
+        foreach (var item in Model.Item1)
+        {
+            <p>@item</p>
+        }
     }
+    else
+    {
+        <p>Aucune recommandation importante.</p>
+    }
+
+    <h2>Recommandations Importantes Moyennes</h2>
+    @if (Model.Item2.Any())
+    {
+        foreach (var item in Model.Item2)
+        {
+            <p>@item</p>
+        }
+    }
+    else
+    {
+        <p>Aucune recommandation importante moyenne.</p>
+    }
+
+    <h2>Recommandations Moyennes</h2>
+    @if (Model.Item3.Any())
+    {
+        foreach (var item in Model.Item3)
+        {
+            <p>@item</p>
+        }
+    }
+    else
+    {
+        <p>Aucune recommandation moyenne.</p>
+    }
+
+    <h2>Recommandations Presque</h2>
+    @if (Model.Item4.Any())
+    {
+        foreach (var item in Model.Item4)
+        {
+            <p>@item</p>
+        }
+    }
+    else
+    {
+        <p>Aucune recommandation presque.</p>
+    }
+
+    <h2>Recommandations Félicitations</h2>
+    @if (Model.Item5.Any())
+    {
+        foreach (var item in Model.Item5)
+        {
+            <p>@item</p>
+        }
+    }
+    else
+    {
+        <p>Aucune recommandation de félicitations.</p>
+    }
+
 </div>

@@ -11,12 +11,12 @@
             {
               "contenu": "Je ne consomme pas de végétaux 🤢",
               "Score": 0,
-              "recommandation": "Il est important d'intégrer des fruits et légumes dans ton alimentation. Ils sont essentiels pour ta santé et apportent des vitamines et minéraux. Essaie d'ajouter au moins une portion par jour !"
+              "recommandation": "Nul, il est important d'intégrer des fruits et légumes dans ton alimentation. Ils sont essentiels pour ta santé et apportent des vitamines et minéraux. Essaie d'ajouter au moins une portion par jour !"
             },
             {
               "contenu": "Une à deux fois",
               "Score": 2,
-              "recommandation": "Bien que tu consommes quelques fruits et légumes, il serait bénéfique d'augmenter ta consommation. Vise au moins trois portions par jour pour maximiser les bienfaits pour la santé."
+              "recommandation": "Ce n'est pas super, bien que tu consommes quelques fruits et légumes, il serait bénéfique d'augmenter ta consommation. Vise au moins trois portions par jour pour maximiser les bienfaits pour la santé."
             },
             {
               "contenu": "Trois à quatre fois",
@@ -38,17 +38,17 @@
             {
               "contenu": "Je ne cuisine jamais.",
               "Score": 0,
-              "recommandation": "Il serait bénéfique d'apprendre à cuisiner pour mieux contrôler les ingrédients et la qualité de ton alimentation. Cuisiner chez soi peut également être une expérience agréable et enrichissante."
+              "recommandation": "Nul, il serait bénéfique d'apprendre à cuisiner pour mieux contrôler les ingrédients et la qualité de ton alimentation. Cuisiner chez soi peut également être une expérience agréable et enrichissante."
             },
             {
               "contenu": "Du beurre, toujours du beurre",
               "Score": 1,
-              "recommandation": "Utiliser trop de beurre peut augmenter ta consommation de graisses saturées. Essaie de varier les matières grasses en intégrant des huiles végétales saines pour un meilleur équilibre nutritionnel."
+              "recommandation": "Pas super, utiliser trop de beurre peut augmenter ta consommation de graisses saturées. Essaie de varier les matières grasses en intégrant des huiles végétales saines pour un meilleur équilibre nutritionnel."
             },
             {
               "contenu": "De l'huile",
               "Score": 4,
-              "recommandation": "Bien joué ! Utiliser de l'huile est généralement plus sain que le beurre. Privilégie les huiles riches en acides gras insaturés, comme l'huile d'olive ou l'huile de colza, pour profiter de leurs bienfaits."
+              "recommandation": "Bravo ! Utiliser de l'huile est généralement plus sain que le beurre. Privilégie les huiles riches en acides gras insaturés, comme l'huile d'olive ou l'huile de colza, pour profiter de leurs bienfaits."
             },
             {
               "contenu": "Du beurre et de l'huile",
@@ -70,7 +70,7 @@
             {
               "contenu": "Moins de 5 minutes, le temps c'est de l'argent.",
               "Score": 0,
-              "recommandation": "Manger rapidement peut nuire à ta digestion et à ton bien-être. Essaie de prendre le temps de savourer tes repas pour mieux apprécier la nourriture et favoriser une digestion optimale."
+              "recommandation": "Nul, manger rapidement peut nuire à ta digestion et à ton bien-être. Essaie de prendre le temps de savourer tes repas pour mieux apprécier la nourriture et favoriser une digestion optimale."
             },
             {
               "contenu": "Moins de 20 minutes.",
@@ -85,7 +85,7 @@
             {
               "contenu": "Plus de 30 minutes.",
               "Score": 3,
-              "recommandation": "C'est excellent de prendre plus de 30 minutes pour tes repas ! Cela te permet de déguster et de mieux apprécier ce que tu manges. Veille à éviter les distractions pour profiter pleinement de ce moment."
+              "recommandation": "C'est pas mal de prendre plus de 30 minutes pour tes repas ! Cela te permet de déguster et de mieux apprécier ce que tu manges. Veille à éviter les distractions pour profiter pleinement de ce moment."
             }
           ]
         },
@@ -97,7 +97,7 @@
             {
               "contenu": "Pas de poisson, je m'en fish",
               "Score": 0,
-              "recommandation": "Il est conseillé d'intégrer du poisson dans ton alimentation. Le poisson est une excellente source d'acides gras oméga-3, bénéfiques pour la santé cardiaque et cérébrale. Pense à essayer différentes variétés pour découvrir ce que tu aimes !"
+              "recommandation": "Nul, il est conseillé d'intégrer du poisson dans ton alimentation. Le poisson est une excellente source d'acides gras oméga-3, bénéfiques pour la santé cardiaque et cérébrale. Pense à essayer différentes variétés pour découvrir ce que tu aimes !"
             },
             {
               "contenu": "Une fois par semaine.",
@@ -134,7 +134,7 @@
             {
               "contenu": "Je ne mange pas de protéines.",
               "Score": 0,
-              "recommandation": "Il est important d'inclure des protéines dans ton alimentation. Elles sont essentielles pour la croissance, la réparation des tissus et le bon fonctionnement de ton corps. Essaie d'intégrer des aliments comme les légumineuses, les noix ou les produits laitiers."
+              "recommandation": "Nul, il est important d'inclure des protéines dans ton alimentation. Elles sont essentielles pour la croissance, la réparation des tissus et le bon fonctionnement de ton corps. Essaie d'intégrer des aliments comme les légumineuses, les noix ou les produits laitiers."
             }
           ]
         },
@@ -146,7 +146,7 @@
             {
               "contenu": "Aucune.",
               "Score": 0,
-              "recommandation": "Il serait bénéfique d'intégrer des produits laitiers dans ton alimentation. Ils sont une bonne source de calcium et de protéines, essentiels pour la santé des os et des muscles."
+              "recommandation": "Nul, il serait bénéfique d'intégrer des produits laitiers dans ton alimentation. Ils sont une bonne source de calcium et de protéines, essentiels pour la santé des os et des muscles."
             },
             {
               "contenu": "Une portion.",
@@ -173,7 +173,7 @@
             {
               "contenu": "Jamais, je ne m'en préoccupe pas.",
               "Score": 0,
-              "recommandation": "Il serait bénéfique de commencer à prêter attention aux étiquettes nutritionnelles. Comprendre ce que tu manges peut t'aider à faire des choix alimentaires plus sains et à mieux contrôler ta nutrition."
+              "recommandation": "Nul, il serait bénéfique de commencer à prêter attention aux étiquettes nutritionnelles. Comprendre ce que tu manges peut t'aider à faire des choix alimentaires plus sains et à mieux contrôler ta nutrition."
             },
             {
               "contenu": "Parfois, selon l'aliment.",
@@ -205,7 +205,7 @@
             {
               "contenu": "Oui, souvent des aliments sucrés.",
               "Score": 0,
-              "recommandation": "Il serait bénéfique de réduire ta consommation d'aliments sucrés entre les repas. Opte plutôt pour des options plus saines, comme des fruits ou des noix, pour éviter les pics de sucre et favoriser une alimentation équilibrée."
+              "recommandation": "Nul, il serait bénéfique de réduire ta consommation d'aliments sucrés entre les repas. Opte plutôt pour des options plus saines, comme des fruits ou des noix, pour éviter les pics de sucre et favoriser une alimentation équilibrée."
             },
             {
               "contenu": "Oui, principalement des fruits ou des noix (fruits secs).",
@@ -222,7 +222,7 @@
             {
               "contenu": "Non, je mange surtout des plats préparés.",
               "Score": 0,
-              "recommandation": "Il serait bénéfique de cuisiner davantage toi-même. Les plats préparés sont souvent riches en sel, graisses et additifs. Préparer des repas maison te permet de mieux contrôler les ingrédients et de faire des choix plus sains."
+              "recommandation": "Nul, il serait bénéfique de cuisiner davantage toi-même. Les plats préparés sont souvent riches en sel, graisses et additifs. Préparer des repas maison te permet de mieux contrôler les ingrédients et de faire des choix plus sains."
             },
             {
               "contenu": "Parfois, selon mon emploi du temps.",
@@ -244,7 +244,7 @@
             {
               "contenu": "Non, je sale beaucoup mes plats.",
               "Score": 0,
-              "recommandation": "Fais attention, consommer trop de sel peut augmenter les risques d'hypertension et de problèmes cardiovasculaires. Il est recommandé de réduire la quantité de sel dans tes plats pour protéger ta santé."
+              "recommandation": "Nul, fais attention, consommer trop de sel peut augmenter les risques d'hypertension et de problèmes cardiovasculaires. Il est recommandé de réduire la quantité de sel dans tes plats pour protéger ta santé."
             },
             {
               "contenu": "Je fais attention, mais je salais encore.",
@@ -266,7 +266,7 @@
             {
               "contenu": "Plus de 150 g.",
               "Score": 0,
-              "recommandation": "Il est important de faire attention ! La consommation excessive de charcuterie est associée à des risques pour la santé. Il est recommandé de ne pas dépasser 150 g par semaine. Réduire ta consommation serait un excellent pas pour mieux protéger ta santé."
+              "recommandation": "Nul, il est important de faire attention ! La consommation excessive de charcuterie est associée à des risques pour la santé. Il est recommandé de ne pas dépasser 150 g par semaine. Réduire ta consommation serait un excellent pas pour mieux protéger ta santé."
             },
             {
               "contenu": "Je ne mange jamais de charcuterie.",
@@ -288,7 +288,7 @@
             {
               "contenu": "Plus de 500 g.",
               "Score": 0,
-              "recommandation": "Il serait bon de revoir ta consommation ! Pour limiter les risques pour la santé et protéger l'environnement, il est recommandé de ne pas dépasser 500 g de viande rouge par semaine. Réduire ta consommation peut faire une différence."
+              "recommandation": "Nul, il serait bon de revoir ta consommation ! Pour limiter les risques pour la santé et protéger l'environnement, il est recommandé de ne pas dépasser 500 g de viande rouge par semaine. Réduire ta consommation peut faire une différence."
             },
             {
               "contenu": "Entre 300 g et 500 g.",
@@ -298,7 +298,7 @@
             {
               "contenu": "Moins de 500 g.",
               "Score": 4,
-              "recommandation": "C'est excellent ! Ta consommation de viande est bien en dessous de la limite recommandée. Continue sur cette voie pour prendre soin de ta santé et de la planète."
+              "recommandation": "Bravo ! Ta consommation de viande est bien en dessous de la limite recommandée. Continue sur cette voie pour prendre soin de ta santé et de la planète."
             },
             {
               "contenu": "Je ne consomme pas de viande.",
@@ -325,7 +325,7 @@
             {
               "contenu": "Je compte pas... mais beaucoup",
               "Score": 0,
-              "recommandation": "Attention, consommer beaucoup de boissons sucrées n'est pas bon pour ta santé ! Il est recommandé de les limiter autant que possible. Essaie de réduire ta consommation progressivement pour améliorer ton bien-être."
+              "recommandation": "Nul, attention, consommer beaucoup de boissons sucrées n'est pas bon pour ta santé ! Il est recommandé de les limiter autant que possible. Essaie de réduire ta consommation progressivement pour améliorer ton bien-être."
             }
           ]
         },
@@ -337,7 +337,7 @@
             {
               "contenu": "Moins de 0.5L par jour.",
               "Score": 0,
-              "recommandation": "Attention, ce n'est pas suffisant ! Il est recommandé de boire environ 2 litres d'eau par jour pour bien hydrater ton corps. N'oublie pas de faire un effort pour augmenter ta consommation d'eau."
+              "recommandation": "Nul, ce n'est pas suffisant ! Il est recommandé de boire environ 2 litres d'eau par jour pour bien hydrater ton corps. N'oublie pas de faire un effort pour augmenter ta consommation d'eau."
             },
             {
               "contenu": "Environ 2L par jour.",
@@ -359,12 +359,12 @@
             {
               "contenu": "Plus de 10 verres.",
               "Score": 0,
-              "recommandation": "Ce n'est pas bien ! Il est recommandé de réduire votre consommation d'alcool à un maximum de 10 verres par semaine et de ne pas dépasser 2 verres par jour. Bravo pour tes efforts pour améliorer ta santé !"
+              "recommandation": "Nul, ce n'est pas bien ! Il est recommandé de réduire votre consommation d'alcool à un maximum de 10 verres par semaine et de ne pas dépasser 2 verres par jour. Bravo pour tes efforts pour améliorer ta santé !"
             },
             {
               "contenu": "Maximum 10 verres.",
               "Score": 2,
-              "recommandation": "Bravo pour tes efforts ! Pour limiter les risques pour votre santé, essayez de ne pas dépasser 2 verres par jour et d'avoir des jours sans consommation d'alcool."
+              "recommandation": "C'est bien mais pour limiter les risques pour votre santé, essayez de ne pas dépasser 2 verres par jour et d'avoir des jours sans consommation d'alcool."
             },
             {
               "contenu": "Je ne bois pas d'alcool.",

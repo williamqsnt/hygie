@@ -7,26 +7,25 @@
           "question": "Combien de fruits et légumes consommes-tu par jour ?",
           "type": "text",
           "name": "fruit",
-          "Scoretotal": 6,
           "reponses": [
             {
               "contenu": "Je ne consomme pas de végétaux 🤢",
               "Score": 0,
-              "recommandation": "Il est important d'intégrer des fruits et légumes dans ton alimentation. Ils sont essentiels pour ta santé et apportent des vitamines et minéraux. Essaie d'ajouter au moins une portion par jour !"
+              "recommandation": "Nul, il est important d'intégrer des fruits et légumes dans ton alimentation. Ils sont essentiels pour ta santé et apportent des vitamines et minéraux. Essaie d'ajouter au moins une portion par jour !"
             },
             {
               "contenu": "Une à deux fois",
-              "Score": 1,
-              "recommandation": "Bien que tu consommes quelques fruits et légumes, il serait bénéfique d'augmenter ta consommation. Vise au moins trois portions par jour pour maximiser les bienfaits pour la santé."
+              "Score": 2,
+              "recommandation": "Ce n'est pas super, bien que tu consommes quelques fruits et légumes, il serait bénéfique d'augmenter ta consommation. Vise au moins trois portions par jour pour maximiser les bienfaits pour la santé."
             },
             {
               "contenu": "Trois à quatre fois",
-              "Score": 2,
+              "Score": 3,
               "recommandation": "C'est un bon début ! Continue à inclure des fruits et légumes dans tes repas. Essaie d'atteindre cinq portions par jour pour une meilleure santé."
             },
             {
               "contenu": "5 fois voir plus",
-              "Score": 3,
+              "Score": 4,
               "recommandation": "Bravo pour tes efforts ! Maintenir une consommation élevée de fruits et légumes est excellent pour ta santé. Continue à explorer de nouvelles variétés et recettes pour diversifier ton alimentation."
             }
           ]
@@ -35,22 +34,21 @@
           "question": "Quand tu cuisines, tu as pour habitude d'utiliser : ",
           "type": "text",
           "name": "graisse",
-          "Scoretotal": 10,
           "reponses": [
             {
               "contenu": "Je ne cuisine jamais.",
               "Score": 0,
-              "recommandation": "Il serait bénéfique d'apprendre à cuisiner pour mieux contrôler les ingrédients et la qualité de ton alimentation. Cuisiner chez soi peut également être une expérience agréable et enrichissante."
+              "recommandation": "Nul, il serait bénéfique d'apprendre à cuisiner pour mieux contrôler les ingrédients et la qualité de ton alimentation. Cuisiner chez soi peut également être une expérience agréable et enrichissante."
             },
             {
               "contenu": "Du beurre, toujours du beurre",
               "Score": 1,
-              "recommandation": "Utiliser trop de beurre peut augmenter ta consommation de graisses saturées. Essaie de varier les matières grasses en intégrant des huiles végétales saines pour un meilleur équilibre nutritionnel."
+              "recommandation": "Pas super, utiliser trop de beurre peut augmenter ta consommation de graisses saturées. Essaie de varier les matières grasses en intégrant des huiles végétales saines pour un meilleur équilibre nutritionnel."
             },
             {
               "contenu": "De l'huile",
               "Score": 4,
-              "recommandation": "Bien joué ! Utiliser de l'huile est généralement plus sain que le beurre. Privilégie les huiles riches en acides gras insaturés, comme l'huile d'olive ou l'huile de colza, pour profiter de leurs bienfaits."
+              "recommandation": "Bravo ! Utiliser de l'huile est généralement plus sain que le beurre. Privilégie les huiles riches en acides gras insaturés, comme l'huile d'olive ou l'huile de colza, pour profiter de leurs bienfaits."
             },
             {
               "contenu": "Du beurre et de l'huile",
@@ -68,27 +66,26 @@
           "question": "Combien de temps passes-tu à table en moyenne",
           "type": "text",
           "name": "temps",
-          "Scoretotal": 6,
           "reponses": [
             {
               "contenu": "Moins de 5 minutes, le temps c'est de l'argent.",
               "Score": 0,
-              "recommandation": "Manger rapidement peut nuire à ta digestion et à ton bien-être. Essaie de prendre le temps de savourer tes repas pour mieux apprécier la nourriture et favoriser une digestion optimale."
+              "recommandation": "Nul, manger rapidement peut nuire à ta digestion et à ton bien-être. Essaie de prendre le temps de savourer tes repas pour mieux apprécier la nourriture et favoriser une digestion optimale."
             },
             {
               "contenu": "Moins de 20 minutes.",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "Bien que ce soit un bon début, essaie de prolonger le temps passé à table. Prendre le temps de manger contribue à une meilleure digestion et permet d'apprécier davantage les saveurs de tes plats."
             },
             {
               "contenu": "Entre 20 et 30 minutes.",
-              "Score": 3,
+              "Score": 4,
               "recommandation": "Bravo ! Passer entre 20 et 30 minutes à table est idéal pour savourer tes repas. Continue à prendre ce temps pour apprécier la nourriture et favoriser une digestion saine."
             },
             {
               "contenu": "Plus de 30 minutes.",
-              "Score": 2,
-              "recommandation": "C'est excellent de prendre plus de 30 minutes pour tes repas ! Cela te permet de déguster et de mieux apprécier ce que tu manges. Veille à éviter les distractions pour profiter pleinement de ce moment."
+              "Score": 3,
+              "recommandation": "C'est pas mal de prendre plus de 30 minutes pour tes repas ! Cela te permet de déguster et de mieux apprécier ce que tu manges. Veille à éviter les distractions pour profiter pleinement de ce moment."
             }
           ]
         },
@@ -96,26 +93,25 @@
           "question": "À quelle fréquence manges-tu du poisson ou des fruits de mer ?",
           "type": "text",
           "name": "poisson",
-          "Scoretotal": 6,
           "reponses": [
             {
               "contenu": "Pas de poisson, je m'en fish",
               "Score": 0,
-              "recommandation": "Il est conseillé d'intégrer du poisson dans ton alimentation. Le poisson est une excellente source d'acides gras oméga-3, bénéfiques pour la santé cardiaque et cérébrale. Pense à essayer différentes variétés pour découvrir ce que tu aimes !"
+              "recommandation": "Nul, il est conseillé d'intégrer du poisson dans ton alimentation. Le poisson est une excellente source d'acides gras oméga-3, bénéfiques pour la santé cardiaque et cérébrale. Pense à essayer différentes variétés pour découvrir ce que tu aimes !"
             },
             {
               "contenu": "Une fois par semaine.",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "C'est un bon début, mais tu pourrais bénéficier d'une consommation plus fréquente de poisson. Essayez de viser deux à trois fois par semaine pour profiter pleinement des bienfaits des acides gras oméga-3."
             },
             {
               "contenu": "Deux à trois fois par semaine.",
-              "Score": 3,
+              "Score": 4,
               "recommandation": "Bravo ! Consommer du poisson deux à trois fois par semaine est idéal pour ta santé. Pense à varier les types de poisson et les préparations pour diversifier tes repas."
             },
             {
               "contenu": "Quotidiennement.",
-              "Score": 2,
+              "Score": 3,
               "recommandation": "C'est super d'inclure du poisson dans ton alimentation chaque jour. Assure-toi de varier les sources pour obtenir un large éventail de nutriments et éviter les excès de mercure présents dans certains poissons."
             }
           ]
@@ -124,22 +120,21 @@
           "question": "Quelle est ta source principale de protéines ?",
           "type": "text",
           "name": "source_proteines",
-          "Scoretotal": 3,
           "reponses": [
             {
               "contenu": "Principalement de la viande rouge.",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "Il est bon d'inclure des protéines, mais essaie de diversifier tes sources. Consommer trop de viande rouge peut être lié à des risques pour la santé. Pense à ajouter des poissons et des légumineuses à ton alimentation."
             },
             {
               "contenu": "Un mélange de viandes, poissons et légumineuses.",
-              "Score": 2,
+              "Score": 4,
               "recommandation": "Bravo ! Avoir une variété de sources de protéines est excellent pour ta santé. Cela t'assure d'obtenir tous les acides aminés essentiels et d'autres nutriments."
             },
             {
               "contenu": "Je ne mange pas de protéines.",
               "Score": 0,
-              "recommandation": "Il est important d'inclure des protéines dans ton alimentation. Elles sont essentielles pour la croissance, la réparation des tissus et le bon fonctionnement de ton corps. Essaie d'intégrer des aliments comme les légumineuses, les noix ou les produits laitiers."
+              "recommandation": "Nul, il est important d'inclure des protéines dans ton alimentation. Elles sont essentielles pour la croissance, la réparation des tissus et le bon fonctionnement de ton corps. Essaie d'intégrer des aliments comme les légumineuses, les noix ou les produits laitiers."
             }
           ]
         },
@@ -147,26 +142,25 @@
           "question": "Combien de portions de produits laitiers consommes-tu par jour ?",
           "type": "text",
           "name": "produits_laitiers",
-          "Scoretotal": 6,
           "reponses": [
             {
               "contenu": "Aucune.",
               "Score": 0,
-              "recommandation": "Il serait bénéfique d'intégrer des produits laitiers dans ton alimentation. Ils sont une bonne source de calcium et de protéines, essentiels pour la santé des os et des muscles."
+              "recommandation": "Nul, il serait bénéfique d'intégrer des produits laitiers dans ton alimentation. Ils sont une bonne source de calcium et de protéines, essentiels pour la santé des os et des muscles."
             },
             {
               "contenu": "Une portion.",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "Une portion est un bon début, mais tu pourrais envisager d'augmenter ta consommation. Deux à trois portions par jour sont recommandées pour bénéficier pleinement des nutriments."
             },
             {
               "contenu": "Deux à trois portions.",
-              "Score": 3,
+              "Score": 4,
               "recommandation": "Bravo ! Consommer deux à trois portions de produits laitiers par jour est idéal pour ta santé. Assure-toi de choisir des options variées pour diversifier les nutriments."
             },
             {
               "contenu": "Plus de trois portions, ce sont mes amis pour la vie !",
-              "Score": 2,
+              "Score": 3,
               "recommandation": "C'est génial d'apprécier les produits laitiers, mais fais attention à ne pas en abuser. Varie tes sources de calcium et de protéines pour un équilibre nutritionnel optimal."
             }
           ]
@@ -175,26 +169,25 @@
           "question": "As-tu l'habitude de lire les étiquettes nutritionnelles des aliments ?",
           "type": "text",
           "name": "etiquettes_nutritionnelles",
-          "Scoretotal": 6,
           "reponses": [
             {
               "contenu": "Jamais, je ne m'en préoccupe pas.",
               "Score": 0,
-              "recommandation": "Il serait bénéfique de commencer à prêter attention aux étiquettes nutritionnelles. Comprendre ce que tu manges peut t'aider à faire des choix alimentaires plus sains et à mieux contrôler ta nutrition."
+              "recommandation": "Nul, il serait bénéfique de commencer à prêter attention aux étiquettes nutritionnelles. Comprendre ce que tu manges peut t'aider à faire des choix alimentaires plus sains et à mieux contrôler ta nutrition."
             },
             {
               "contenu": "Parfois, selon l'aliment.",
-              "Score": 2,
+              "Score": 3,
               "recommandation": "C'est un bon début ! Essaie d'être plus régulier dans la lecture des étiquettes. Cela te permettra de mieux comprendre les apports nutritionnels et de faire des choix éclairés."
             },
             {
               "contenu": "Toujours, j'y fais attention.",
-              "Score": 3,
+              "Score": 4,
               "recommandation": "Bravo ! Être attentif aux étiquettes nutritionnelles est une excellente habitude. Cela t'aide à faire des choix sains et à maintenir un équilibre nutritionnel."
             },
             {
               "contenu": "Je ne sais pas lire.",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "Pas de souci ! Prends le temps d'apprendre à lire les étiquettes nutritionnelles. C'est une compétence précieuse qui te permettra de mieux gérer ton alimentation."
             }
           ]
@@ -203,21 +196,20 @@
           "question": "Manges-tu des collations entre les repas ?",
           "type": "text",
           "name": "collations",
-          "Scoretotal": 3,
           "reponses": [
             {
               "contenu": "Je ne grignote jamais :) .",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "Bien joué ! Ne pas grignoter est souvent une bonne habitude, mais n'hésite pas à prendre des collations saines si tu as faim. Cela peut t'aider à maintenir ton énergie tout au long de la journée."
             },
             {
               "contenu": "Oui, souvent des aliments sucrés.",
               "Score": 0,
-              "recommandation": "Il serait bénéfique de réduire ta consommation d'aliments sucrés entre les repas. Opte plutôt pour des options plus saines, comme des fruits ou des noix, pour éviter les pics de sucre et favoriser une alimentation équilibrée."
+              "recommandation": "Nul, il serait bénéfique de réduire ta consommation d'aliments sucrés entre les repas. Opte plutôt pour des options plus saines, comme des fruits ou des noix, pour éviter les pics de sucre et favoriser une alimentation équilibrée."
             },
             {
               "contenu": "Oui, principalement des fruits ou des noix (fruits secs).",
-              "Score": 2,
+              "Score": 4,
               "recommandation": "Bravo ! Choisir des fruits ou des noix comme collations est excellent pour ta santé. Ces aliments sont riches en nutriments et te fourniront l'énergie nécessaire sans les inconvénients des collations sucrées."
             }
           ]
@@ -226,21 +218,20 @@
           "question": "As-tu l'habitude de cuisiner toi-même ?",
           "type": "text",
           "name": "cuisine",
-          "Scoretotal": 3,
           "reponses": [
             {
               "contenu": "Non, je mange surtout des plats préparés.",
               "Score": 0,
-              "recommandation": "Il serait bénéfique de cuisiner davantage toi-même. Les plats préparés sont souvent riches en sel, graisses et additifs. Préparer des repas maison te permet de mieux contrôler les ingrédients et de faire des choix plus sains."
+              "recommandation": "Nul, il serait bénéfique de cuisiner davantage toi-même. Les plats préparés sont souvent riches en sel, graisses et additifs. Préparer des repas maison te permet de mieux contrôler les ingrédients et de faire des choix plus sains."
             },
             {
               "contenu": "Parfois, selon mon emploi du temps.",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "C'est déjà bien de cuisiner de temps en temps ! Essaie d'intégrer plus de moments où tu peux préparer tes repas, car cela te permet de mieux contrôler ce que tu consommes et de réduire ta dépendance aux plats industriels."
             },
             {
               "contenu": "Oui, je cuisine régulièrement.",
-              "Score": 2,
+              "Score": 4,
               "recommandation": "Bravo ! Cuisiner régulièrement est une excellente habitude. Cela te permet de manger plus sainement, de mieux contrôler les ingrédients, et de profiter des bienfaits d'une alimentation équilibrée."
             }
           ]
@@ -249,21 +240,20 @@
           "question": "Limites-tu ta consommation de sel ?",
           "type": "text",
           "name": "consommation_sel",
-          "Scoretotal": 3,
           "reponses": [
             {
               "contenu": "Non, je sale beaucoup mes plats.",
               "Score": 0,
-              "recommandation": "Fais attention, consommer trop de sel peut augmenter les risques d'hypertension et de problèmes cardiovasculaires. Il est recommandé de réduire la quantité de sel dans tes plats pour protéger ta santé."
+              "recommandation": "Nul, fais attention, consommer trop de sel peut augmenter les risques d'hypertension et de problèmes cardiovasculaires. Il est recommandé de réduire la quantité de sel dans tes plats pour protéger ta santé."
             },
             {
               "contenu": "Je fais attention, mais je salais encore.",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "C'est un bon début ! Fais encore plus attention à la quantité de sel que tu ajoutes pour atteindre les recommandations de limiter sa consommation à moins de 5g par jour."
             },
             {
               "contenu": "Oui, je préfère les plats sans sel ajouté.",
-              "Score": 2,
+              "Score": 4,
               "recommandation": "Bravo ! Limiter ou éviter le sel ajouté est une excellente habitude pour protéger ta santé. Continue comme ça !"
             }
           ]
@@ -272,21 +262,20 @@
           "question": "Combien de charcuterie manges-tu par semaine ?",
           "type": "text",
           "name": "charcuterie",
-          "Scoretotal": 3,
           "reponses": [
             {
               "contenu": "Plus de 150 g.",
               "Score": 0,
-              "recommandation": "Il est important de faire attention ! La consommation excessive de charcuterie est associée à des risques pour la santé. Il est recommandé de ne pas dépasser 150 g par semaine. Réduire ta consommation serait un excellent pas pour mieux protéger ta santé."
+              "recommandation": "Nul, il est important de faire attention ! La consommation excessive de charcuterie est associée à des risques pour la santé. Il est recommandé de ne pas dépasser 150 g par semaine. Réduire ta consommation serait un excellent pas pour mieux protéger ta santé."
             },
             {
               "contenu": "Je ne mange jamais de charcuterie.",
-              "Score": 2,
+              "Score": 4,
               "recommandation": "Bravo pour ton choix ! Ne pas consommer de charcuterie est une excellente décision pour ta santé, car cela réduit les risques liés aux produits transformés."
             },
             {
               "contenu": "Entre 100 et 150 g.",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "Bon effort ! Tu es proche de la limite recommandée, mais essaie de réduire encore un peu pour minimiser les risques liés à la consommation de produits transformés."
             }
           ]
@@ -295,26 +284,25 @@
           "question": "Quelle est ta consommation de viande (hors volaille) par semaine ?",
           "type": "text",
           "name": "viande",
-          "Scoretotal": 6,
           "reponses": [
             {
               "contenu": "Plus de 500 g.",
               "Score": 0,
-              "recommandation": "Il serait bon de revoir ta consommation ! Pour limiter les risques pour la santé et protéger l'environnement, il est recommandé de ne pas dépasser 500 g de viande rouge par semaine. Réduire ta consommation peut faire une différence."
+              "recommandation": "Nul, il serait bon de revoir ta consommation ! Pour limiter les risques pour la santé et protéger l'environnement, il est recommandé de ne pas dépasser 500 g de viande rouge par semaine. Réduire ta consommation peut faire une différence."
             },
             {
               "contenu": "Entre 300 g et 500 g.",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "C'est un bon début ! Tu es dans la limite supérieure des recommandations. Essaie de viser vers le bas de cette fourchette pour encore plus de bénéfices pour ta santé et l'environnement."
             },
             {
               "contenu": "Moins de 500 g.",
-              "Score": 3,
-              "recommandation": "C'est excellent ! Ta consommation de viande est bien en dessous de la limite recommandée. Continue sur cette voie pour prendre soin de ta santé et de la planète."
+              "Score": 4,
+              "recommandation": "Bravo ! Ta consommation de viande est bien en dessous de la limite recommandée. Continue sur cette voie pour prendre soin de ta santé et de la planète."
             },
             {
               "contenu": "Je ne consomme pas de viande.",
-              "Score": 2,
+              "Score": 3,
               "recommandation": "Très bon choix ! Ne pas consommer de viande est bénéfique pour ta santé et l'environnement. Bravo pour cette décision !"
             }
           ]
@@ -323,22 +311,21 @@
           "question": "Consommes-tu des sodas et autres boissons sucrées ?",
           "type": "text",
           "name": "boisson",
-          "Scoretotal": 3,
           "reponses": [
             {
               "contenu": "Je n'en boit pas, ici on boit du AirUp.",
-              "Score": 2,
+              "Score": 4,
               "recommandation": "Bravo pour tes efforts ! Éviter les boissons sucrées est une excellente habitude pour ta santé. Continue à opter pour des alternatives plus saines comme l'AirUp."
             },
             {
               "contenu": "1 verre par jour maximum.",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "Pas mal ! Limiter ta consommation de boissons sucrées à 1 verre par jour est déjà un bon point. Essaie de réduire encore plus si possible pour encore mieux protéger ta santé."
             },
             {
               "contenu": "Je compte pas... mais beaucoup",
               "Score": 0,
-              "recommandation": "Attention, consommer beaucoup de boissons sucrées n'est pas bon pour ta santé ! Il est recommandé de les limiter autant que possible. Essaie de réduire ta consommation progressivement pour améliorer ton bien-être."
+              "recommandation": "Nul, attention, consommer beaucoup de boissons sucrées n'est pas bon pour ta santé ! Il est recommandé de les limiter autant que possible. Essaie de réduire ta consommation progressivement pour améliorer ton bien-être."
             }
           ]
         },
@@ -346,21 +333,20 @@
           "question": "Combien de littres d'eau bois-tu par jour ?",
           "type": "text",
           "name": "eau",
-          "Scoretotal": 3,
           "reponses": [
             {
               "contenu": "Moins de 0.5L par jour.",
               "Score": 0,
-              "recommandation": "Attention, ce n'est pas suffisant ! Il est recommandé de boire environ 2 litres d'eau par jour pour bien hydrater ton corps. N'oublie pas de faire un effort pour augmenter ta consommation d'eau."
+              "recommandation": "Nul, ce n'est pas suffisant ! Il est recommandé de boire environ 2 litres d'eau par jour pour bien hydrater ton corps. N'oublie pas de faire un effort pour augmenter ta consommation d'eau."
             },
             {
               "contenu": "Environ 2L par jour.",
-              "Score": 2,
+              "Score": 4,
               "recommandation": "Bravo pour tes efforts ! Tu respectes les recommandations en buvant environ 2 litres d'eau par jour. Continue comme ça pour maintenir une bonne hydratation."
             },
             {
               "contenu": "Entre 0.5L et 1.5L",
-              "Score": 1,
+              "Score": 2,
               "recommandation": "Bravo tu y es presque ! Cependant, essaie d'augmenter légèrement ta consommation d'eau pour atteindre environ 2 litres par jour, ce qui est idéal pour bien hydrater ton corps."
             }
           ]
@@ -369,21 +355,20 @@
           "question": "Quelle est ta consommation d'alcool en moyenne par semaine ?",
           "type": "text",
           "name": "alcool",
-          "Scoretotal": 3,
           "reponses": [
             {
               "contenu": "Plus de 10 verres.",
               "Score": 0,
-              "recommandation": "Ce n'est pas bien ! Il est recommandé de réduire votre consommation d'alcool à un maximum de 10 verres par semaine et de ne pas dépasser 2 verres par jour. Bravo pour tes efforts pour améliorer ta santé !"
+              "recommandation": "Nul, ce n'est pas bien ! Il est recommandé de réduire votre consommation d'alcool à un maximum de 10 verres par semaine et de ne pas dépasser 2 verres par jour. Bravo pour tes efforts pour améliorer ta santé !"
             },
             {
               "contenu": "Maximum 10 verres.",
-              "Score": 1,
-              "recommandation": "Bravo pour tes efforts ! Pour limiter les risques pour votre santé, essayez de ne pas dépasser 2 verres par jour et d'avoir des jours sans consommation d'alcool."
+              "Score": 2,
+              "recommandation": "C'est bien mais pour limiter les risques pour votre santé, essayez de ne pas dépasser 2 verres par jour et d'avoir des jours sans consommation d'alcool."
             },
             {
               "contenu": "Je ne bois pas d'alcool.",
-              "Score": 2,
+              "Score": 4,
               "recommandation": "Bravo pour tes efforts ! C'est une excellente décision ! Ne pas consommer d'alcool est la manière la plus sûre de réduire les risques pour votre santé."
             }
           ]

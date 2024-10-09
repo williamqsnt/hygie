@@ -47,18 +47,47 @@ namespace Hygie.Front.Controllers
         public ActionResult GetResultQuiz(string valuesAnswers, QuizCat quizCat)
         {
             Quiz quiz = _quizService.GetQuiz(quizCat);
-            List<string> recommandations = new List<string>();
+            List<string> recommandationsImportantes = new List<string>();
+            List<string> recommandationsImportantesMoyennes = new List<string>();
+            List<string> recommandationsMoyennes = new List<string>();
+            List<string> recommandationsPresque = new List<string>();
+            List<string> recommandationsFelicitation = new List<string>();
             int[][] resultats = JsonSerializer.Deserialize<int[][]>(valuesAnswers);
 
             foreach (var answer in resultats)
             {
                 if (answer[1] == 0)
                 {
-                    recommandations.Add(quiz.Questions[answer[0]].Reponses.FirstOrDefault(r => r.Score == answer[1]).Recommandation);
+                    recommandationsImportantes.Add(quiz.Questions[answer[0]].Reponses.FirstOrDefault(r => r.Score == answer[1]).Recommandation);
                 }
+                if (answer[1] == 1)
+                {
+                    recommandationsImportantesMoyennes.Add(quiz.Questions[answer[0]].Reponses.FirstOrDefault(r => r.Score == answer[1]).Recommandation);
+                }
+                if (answer[1] == 2)
+                {
+                    recommandationsMoyennes.Add(quiz.Questions[answer[0]].Reponses.FirstOrDefault(r => r.Score == answer[1]).Recommandation);
+                }
+                if (answer[1] == 3)
+                {
+                    recommandationsPresque.Add(quiz.Questions[answer[0]].Reponses.FirstOrDefault(r => r.Score == answer[1]).Recommandation);
+                }
+                if (answer[1] == 4)
+                {
+                    recommandationsFelicitation.Add(quiz.Questions[answer[0]].Reponses.FirstOrDefault(r => r.Score == answer[1]).Recommandation);
+                }
+
             }
 
-            return View(recommandations);
+            // Créer une liste finale à partir des autres listes
+            List<string> recommandationsFinales = new List<string>();
+            recommandationsFinales.AddRange(recommandationsImportantes);
+            recommandationsFinales.AddRange(recommandationsImportantesMoyennes);
+            recommandationsFinales.AddRange(recommandationsMoyennes);
+            recommandationsFinales.AddRange(recommandationsPresque);
+            recommandationsFinales.AddRange(recommandationsFelicitation);
+
+            return View(Tuple.Create(recommandationsImportantes, recommandationsImportantesMoyennes, recommandationsMoyennes, recommandationsPresque, recommandationsFelicitation));
         }
     }
 }
