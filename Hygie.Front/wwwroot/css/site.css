@@ -1,5 +1,6 @@
 html {
     font-size: 16px;
+    font-family: 'Lato', sans-serif; /* Police moderne et lisible */
 }
 
 @media (min-width: 768px) {
@@ -9,11 +10,11 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Police moderne */
     background-color: #f4f7f6; /* Couleur de fond légère */
     color: #333;
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif; /* Utilisation de la police Roboto */
 }
 
 .container {
@@ -61,7 +62,7 @@ h1 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 30px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 p {
@@ -69,6 +70,7 @@ p {
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Police claire pour les paragraphes */
 }
 
 /* Styles de la section "À propos" */
@@ -114,7 +116,6 @@ p {
             color: #0056b3;
         }
 
-
 /* Styles pour les sources */
 .source-container {
     display: flex;
@@ -150,37 +151,6 @@ h6 {
     margin-bottom: 0;
 }
 
-/* Médias Responsifs pour petits écrans */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .about-container {
-        padding: 20px;
-    }
-
-    .source-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .source-logo {
-        margin-bottom: 15px;
-    }
-}
-
-/* Ajustement pour la barre de navigation sur mobile */
-@media (max-width: 576px) {
-    .navbar-collapse {
-        background-color: #f8f9fa;
-    }
-
-    .navbar-nav .nav-item .nav-link {
-        text-align: center;
-        border-bottom: 1px solid #dee2e6;
-    }
-}
 
 footer {
     border-top: 1px solid #dee2e6;
@@ -188,4 +158,39 @@ footer {
     background-color: #f8f9fa;
     width: 100%;
     text-align: center;
+    margin-top: auto;
+}
+
+
+.haut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Prendre toute la largeur */
+    height: 85vh;
+    z-index: -1; /* Envoyer l'image à l'arrière-plan */
+    object-fit: cover; /* S'assurer que l'image couvre bien tout l'espace */
+    background-image: url(/img/fondfinal.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.haut_div {
+    max-width: 50vw;
+    display: flex;
+    padding: 5vw;
+}
+
+.boxe {
+    background-color: white;
+    border-radius: 30px;
+    padding: 1vw;
+    width: 30vw;
+}
+
+.contenuuuu {
+    margin-top: 70vh;
 }
