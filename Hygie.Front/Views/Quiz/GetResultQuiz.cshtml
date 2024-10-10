@@ -1,4 +1,4 @@
-﻿@model Tuple<List<string>, List<string>, List<string>, List<string>, List<string>>; // On utilise un Tuple pour passer plusieurs listes
+﻿@model Tuple<List<string>, List<string>, List<string>, List<string>, List<string>, int> // On ajoute un int pour le score total
 
 @{
     ViewData["Title"] = "Vos résultats";
@@ -7,55 +7,151 @@
     int nbRecommandationsMoyennes = Model.Item3.Count;
     int nbRecommandationsPresque = Model.Item4.Count;
     int nbRecommandationsFelicitations = Model.Item5.Count;
+
+    // Récupérer le score total depuis le modèle
+    int scoreTotal = Model.Item6;
+
+    string imageUrl = "";
+    if (scoreTotal <= 12)
+    {
+        imageUrl = "/img/homer.jpg";
+    }
+    else if (scoreTotal <= 24)
+    {
+        imageUrl = "/img/homer.jpg";
+    }
+    else if (scoreTotal <= 36)
+    {
+        imageUrl = "/img/homer.jpg";
+    }
+    else if (scoreTotal <= 48)
+    {
+        imageUrl = "/img/homer.jpg";
+    }
+    else if (scoreTotal <= 60)
+    {
+        imageUrl = "/img/homer.jpg";
+    }
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<div class="result">
 
+
+<p>Ton score est similaire à la personnalité suivante :</p>
+<div class="image-container">
+    <img src="@imageUrl" alt="Personnalité correspondante" />
+</div>
+<br />
+<br />
+
+
+<div class="result">
     @if (nbRecommandationsImportantes > 0)
     {
-        <h2>Attention : tu as @nbRecommandationsImportantes points que tu ne respectes pas du tout !</h2>
-        foreach (var item in Model.Item1)
-        {
-            <p>@item</p>
-        }
+        <h2 onclick="toggleVisibility('importantes', 'icon1')">
+            Attention : tu as @nbRecommandationsImportantes points que tu ne respectes pas du tout !
+            <span id="icon1" class="chevron">▼</span>
+        </h2>
+        <div id="importantes" style="display:none;">
+            @foreach (var item in Model.Item1)
+            {
+                <p>@item</p>
+            }
+        </div>
+        <br />
     }
 
     @if (nbRecommandationsImportantesMoyennes > 0)
     {
-        <h2>Attention : tu as @nbRecommandationsImportantesMoyennes points que tu ne respectes presque pas !</h2>
-        foreach (var item in Model.Item2)
-        {
-            <p>@item</p>
-        }
+        <h2 onclick="toggleVisibility('importantesMoyennes', 'icon2')">
+            Attention : tu as @nbRecommandationsImportantesMoyennes points que tu ne respectes presque pas !
+            <span id="icon2" class="chevron">▼</span>
+        </h2>
+        <div id="importantesMoyennes" style="display:none;">
+            @foreach (var item in Model.Item2)
+            {
+                <p>@item</p>
+            }
+        </div>
+        <br />
     }
 
     @if (nbRecommandationsMoyennes > 0)
     {
-        <h2>Pas mal, tu as @nbRecommandationsMoyennes points à moitié respectés !</h2>
-        foreach (var item in Model.Item3)
-        {
-            <p>@item</p>
-        }
+        <h2 onclick="toggleVisibility('moyennes', 'icon3')">
+            Pas mal, tu as @nbRecommandationsMoyennes points à moitié respectés !
+            <span id="icon3" class="chevron">▼</span>
+        </h2>   
+        <div id="moyennes" style="display:none;">
+            @foreach (var item in Model.Item3)
+            {
+                <p>@item</p>
+            }
+        </div>
+        <br />
     }
+
 
     @if (nbRecommandationsPresque > 0)
     {
-        <h2>Presque, tu as @nbRecommandationsPresque que tu remplis quasiment comme il faut !</h2>
-        foreach (var item in Model.Item4)
-        {
-            <p>@item</p>
-        }
+        <h2 onclick="toggleVisibility('presque', 'icon4')">
+            Presque, tu as @nbRecommandationsPresque que tu remplis quasiment comme il faut !
+            <span id="icon4" class="chevron">▼</span>
+        </h2>
+        <div id="presque" style="display:none;">
+            @foreach (var item in Model.Item4)
+            {
+                <p>@item</p>
+            }
+        </div>
+        <br />
     }
 
     @if (nbRecommandationsFelicitations > 0)
     {
-        <h2>Parfait, tu as @nbRecommandationsFelicitations que tu remplis parfaitement !</h2>
-        foreach (var item in Model.Item5)
-        {
-            <p>@item</p>
+        <h2 onclick="toggleVisibility('felicitations', 'icon5')">
+            Parfait, tu as @nbRecommandationsFelicitations que tu remplis parfaitement !
+            <span id="icon5" class="chevron">▼</span>
+        </h2>
+        <div id="felicitations" style="display:none;">
+            @foreach (var item in Model.Item5)
+            {
+                <p>@item</p>
+            }
+        </div>
+    }
+</div>
+
+<script>
+    function toggleVisibility(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
         }
     }
+</script>
 
-</div>
+<style>
+    .chevron {
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    h2 {
+        cursor: pointer;
+    }
+
+    .image-container {
+        text-align: center; /* Centre l'image */
+    }
+
+    .image-container img {
+        max-width: 50%; /* Limite la largeur à 50% */
+        height: auto; /* Garde les proportions de l'image */
+    }
+</style>
