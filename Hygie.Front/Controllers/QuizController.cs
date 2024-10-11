@@ -46,7 +46,7 @@ namespace Hygie.Front.Controllers
         [Route("/result")]
         public ActionResult GetResultQuiz(string valuesAnswers, QuizCat quizCat)
         {
-            Prediction prediction = _quizService.PredictQuiz(quizCat, JsonSerializer.Deserialize<int[][]>(valuesAnswers));
+            //String prediction = _quizService.PredictQuiz(quizCat, JsonSerializer.Deserialize<int[][]>(valuesAnswers));
 
             Quiz quiz = _quizService.GetQuiz(quizCat);
             List<string> recommandationsImportantes = new List<string>();
