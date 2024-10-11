@@ -54,10 +54,17 @@ namespace Hygie.Front.Controllers
             List<string> recommandationsMoyennes = new List<string>();
             List<string> recommandationsPresque = new List<string>();
             List<string> recommandationsFelicitation = new List<string>();
+
+            // Variable pour stocker la somme des scores
+            int scoreTotal = 0;
+
             int[][] resultats = JsonSerializer.Deserialize<int[][]>(valuesAnswers);
 
             foreach (var answer in resultats)
             {
+                // Ajouter le score de la réponse à la somme totale
+                scoreTotal += answer[1];
+
                 if (answer[1] == 0)
                 {
                     recommandationsImportantes.Add(quiz.Questions[answer[0]].Reponses.FirstOrDefault(r => r.Score == answer[1]).Recommandation);
@@ -78,7 +85,6 @@ namespace Hygie.Front.Controllers
                 {
                     recommandationsFelicitation.Add(quiz.Questions[answer[0]].Reponses.FirstOrDefault(r => r.Score == answer[1]).Recommandation);
                 }
-
             }
 
             // Créer une liste finale à partir des autres listes
@@ -89,7 +95,9 @@ namespace Hygie.Front.Controllers
             recommandationsFinales.AddRange(recommandationsPresque);
             recommandationsFinales.AddRange(recommandationsFelicitation);
 
-            return View(Tuple.Create(recommandationsImportantes, recommandationsImportantesMoyennes, recommandationsMoyennes, recommandationsPresque, recommandationsFelicitation));
+            // Retourner les listes et la somme des scores cumulés
+            return View(Tuple.Create(recommandationsImportantes, recommandationsImportantesMoyennes, recommandationsMoyennes, recommandationsPresque, recommandationsFelicitation, scoreTotal));
         }
+
     }
 }
