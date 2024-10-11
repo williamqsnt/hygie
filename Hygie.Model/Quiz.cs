@@ -38,10 +38,13 @@ namespace Hygie.Model
             }
             set
             {
-                // Optionnel : Ajoutez une logique ici si nécessaire
             }
         }
 
+        /// <summary>
+        /// Appel à la méthode de récupération description
+        /// </summary>
+        /// <returns></returns>
         public string GetCategoryDescription()
         {
             return GetEnumDescription(Category);
@@ -50,6 +53,11 @@ namespace Hygie.Model
         [JsonPropertyName("questions")]
         public List<Question> Questions { get; set; } = new List<Question>();
 
+        /// <summary>
+        /// Récupérer la description associée
+        /// </summary>
+        /// <param name="category"></param>
+        /// <returns></returns>
         private string GetEnumDescription(QuizCat category)
         {
             FieldInfo field = category.GetType().GetField(category.ToString());

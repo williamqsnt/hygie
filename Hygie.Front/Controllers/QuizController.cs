@@ -25,6 +25,12 @@ namespace Hygie.Front.Controllers
             return View(quiz);
         }
 
+        /// <summary>
+        /// Envoi de choix de l'utilisateu
+        /// </summary>
+        /// <param name="quizCat"></param>
+        /// <param name="valuesAnswers"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> PostResultQuiz(QuizCat quizCat, string valuesAnswers)
         {
@@ -43,6 +49,12 @@ namespace Hygie.Front.Controllers
             return Json(recommandations);
         }
 
+        /// <summary>
+        /// Récupérer les recommendations associé et en créé une liste
+        /// </summary>
+        /// <param name="valuesAnswers"></param>
+        /// <param name="quizCat"></param>
+        /// <returns></returns>
         [Route("/result")]
         public ActionResult GetResultQuiz(string valuesAnswers, QuizCat quizCat)
         {

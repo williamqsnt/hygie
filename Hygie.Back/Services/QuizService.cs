@@ -1,9 +1,6 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using Hygie.Model;
-using Keras;
 using Microsoft.ML;
-using Numpy;
 
 namespace Hygie.Back.Services
 {   
@@ -11,6 +8,11 @@ namespace Hygie.Back.Services
     {
         public QuizService() { }
 
+        /// <summary>
+        /// Recuperation des questions des quizs et reponses associées
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="PlatformNotSupportedException"></exception>
         public Contenu GetContenu()
         {
             string pathJson;
@@ -34,6 +36,11 @@ namespace Hygie.Back.Services
             return contenu;
         }
 
+        /// <summary>
+        /// Recuperation de la catégorie
+        /// </summary>
+        /// <param name="quizCat"></param>
+        /// <returns></returns>
         public Quiz GetQuiz(QuizCat quizCat)
         {
             Contenu contenu = GetContenu();
@@ -43,6 +50,12 @@ namespace Hygie.Back.Services
             return quiz;
         }
 
+        /// <summary>
+        /// Prediction de la célébrité associée par IA
+        /// </summary>
+        /// <param name="quizCat"></param>
+        /// <param name="resultats"></param>
+        /// <returns></returns>
         public string PredictQuiz(QuizCat quizCat, int[][] resultats)
         {
             MLContext mlContext = new MLContext();
