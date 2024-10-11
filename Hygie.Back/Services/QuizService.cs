@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using Hygie.Model;
+using Keras;
+using Microsoft.ML;
+using Numpy;
 
 namespace Hygie.Back.Services
-{
+{   
     public class QuizService
     {
         public QuizService() { }
@@ -39,5 +42,28 @@ namespace Hygie.Back.Services
 
             return quiz;
         }
+
+        public string PredictQuiz(QuizCat quizCat, int[][] resultats)
+        {
+            MLContext mlContext = new MLContext();
+            DataViewSchema modelSchema;
+            string modelPath = Path.GetFullPath("..\\Hygie.Back\\Data\\saved_model.zip");
+            ITransformer trainedModel = mlContext.Model.Load(modelPath, out modelSchema);
+
+            var predictionEngine = mlContext.Model.CreatePredictionEngine<InputModel, Prediction>(trainedModel);
+
+            var inputModel = new InputModel
+            {
+                Features = resultats
+            };
+
+            var prediction = predictionEngine.Predict(inputModel);
+            List<string> celebrities = new List<string> { "Gerard Depardieu", "Homer Simpson", "Kad Merad", "Thomas Pesquet", "Tibo InShape" };
+
+            var maxIndex = prediction.PredictedLabel.ToList().IndexOf(prediction.PredictedLabel.Max());
+
+            return celebrities[maxIndex];
+        }
+
     }
 }

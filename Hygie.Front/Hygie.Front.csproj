@@ -16,6 +16,11 @@
     <Folder Include="Views\Apropos\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Keras.NET" Version="3.8.5" />
+    <PackageReference Include="Microsoft.ML" Version="3.0.1" />
+    <PackageReference Include="Numpy" Version="3.11.1.34" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Hygie.Back\Hygie.Back.csproj" />
     <ProjectReference Include="..\Hygie.Model\Hygie.Model.csproj" />
   </ItemGroup>
